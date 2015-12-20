@@ -26,7 +26,7 @@ Pebble.addEventListener('showConfiguration', function(e) {
   // Show config page
   var options = {};
   options.watch_version = 3;
-  var url = 'http://centuryglass.github.io/calendar-percent/index.html'+
+  var url = 'http://centuryglass.github.io/vinewatch/index.html'+
       "?watch_version=3"+
       "&basalt_colors="+basalt_color_val;
   
