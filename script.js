@@ -122,19 +122,11 @@ function saveOptions() {
 
 $("document").ready(function() {
 	var watch_version = getQueryParam("watch_version", 1);
-	
-	if (watch_version >= 3) {
-		var basalt_colors = getQueryParam("basalt_colors", 0);
-		basalt_colors = basalt_colors.length == 12 ? basalt_colors : "00AAFFFFFFFF";
-		$('#background-color').css('background-color', "#"+basalt_colors.substring(0,6));
-		$('#foreground-color').css('background-color', "#"+basalt_colors.substring(6,12));
-		$('#time-foreground').removeClass("hidden");
-		$('#time-background').removeClass("hidden");
-	} else {
-		var theme = getQueryParam("theme", 0);
-		theme = parseInt(isNumber(theme) && theme <= 1 ? theme : 0);
-		$('#theme').removeClass("hidden");
-		$('#theme_'+theme).prop( "checked", true ).checkboxradio("refresh");
-	}
+	var basalt_colors = getQueryParam("basalt_colors", 0);
+	basalt_colors = basalt_colors.length == 12 ? basalt_colors : "00AAFFFFFFFF";
+	$('#background-color').css('background-color', "#"+basalt_colors.substring(0,6));
+	$('#foreground-color').css('background-color', "#"+basalt_colors.substring(6,12));
+	$('#time-foreground').removeClass("hidden");
+	$('#time-background').removeClass("hidden");
 
 });
