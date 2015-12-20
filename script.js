@@ -121,12 +121,13 @@ function saveOptions() {
 }
 
 $("document").ready(function() {
-	var watch_version = getQueryParam("watch_version", 1);
 	var basalt_colors = getQueryParam("basalt_colors", 0);
-	basalt_colors = basalt_colors.length == 12 ? basalt_colors : "00AAFFFFFFFF";
-	$('#background-color').css('background-color', "#"+basalt_colors.substring(0,6));
-	$('#foreground-color').css('background-color', "#"+basalt_colors.substring(6,12));
-	$('#time-foreground').removeClass("hidden");
-	$('#time-background').removeClass("hidden");
+	basalt_colors = basalt_colors.length == 18 ? basalt_colors : "000000AAAAAAFFFFFF";
+	$('#first-color').css('background-color', "#"+basalt_colors.substring(0,6));
+	$('#second-color').css('background-color', "#"+basalt_colors.substring(6,12));
+	$('#third-color').css('background-color', "#"+basalt_colors.substring(12,18));
+	$('#color1').removeClass("hidden");
+	$('#color2').removeClass("hidden");
+	$('#color3').removeClass("hidden");
 
 });
