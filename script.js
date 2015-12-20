@@ -102,7 +102,6 @@ function saveOptions() {
 
 	var options = {};
 	
-	options.theme = parseInt($("input[name=theme]:checked").val(), 10);
 	
 	var colors = rgb2hex($('#first-color').css("background-color")).replace("#", '');
 	colors = colors + rgb2hex($('#second-color').css("background-color")).replace("#", '');
@@ -113,22 +112,13 @@ function saveOptions() {
 }
 
 $("document").ready(function() {
-	var watch_version = getQueryParam("watch_version", 1);
-	
-	if (watch_version >= 3) {
-		var basalt_colors = getQueryParam("basalt_colors", 0);
-		basalt_colors = basalt_colors.length == 18 ? basalt_colors : "000000AAAAAAFFFFFF";
-		$('#first-color').css('background-color', "#"+basalt_colors.substring(0,6));
-		$('#second-color').css('background-color', "#"+basalt_colors.substring(6,12));
-		$('#third-color').css('background-color', "#"+basalt_colors.substring(12,18));
-		$('#color1').removeClass("hidden");
-		$('#color2').removeClass("hidden");
-		$('#color3').removeClass("hidden");
-	} else {
-		var theme = getQueryParam("theme", 0);
-		theme = parseInt(isNumber(theme) && theme <= 1 ? theme : 0);
-		$('#theme').removeClass("hidden");
-		$('#theme_'+theme).prop( "checked", true ).checkboxradio("refresh");
-	}
+	var basalt_colors = getQueryParam("basalt_colors", 0);
+	basalt_colors = basalt_colors.length == 18 ? basalt_colors : "000000AAAAAAFFFFFF";
+	$('#first-color').css('background-color', "#"+basalt_colors.substring(0,6));
+	$('#second-color').css('background-color', "#"+basalt_colors.substring(6,12));
+	$('#third-color').css('background-color', "#"+basalt_colors.substring(12,18));
+	$('#color1').removeClass("hidden");
+	$('#color2').removeClass("hidden");
+	$('#color3').removeClass("hidden");
 
 });
