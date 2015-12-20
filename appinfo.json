@@ -1,0 +1,157 @@
+{
+    "appKeys": {
+        "basalt_colors": 0,
+        "request_data": 1
+    },
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "anthony0857@gmail.com",
+    "longName": "Vine",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/background_c.png",
+                "name": "BACKGROUND_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/zero_c.png",
+                "name": "ZERO_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/two_c.png",
+                "name": "TWO_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/three_c.png",
+                "name": "THREE_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/six_c.png",
+                "name": "SIX_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/seven_c.png",
+                "name": "SEVEN_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/eight_c.png",
+                "name": "EIGHT_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/one_s.png",
+                "name": "ONE_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/nine_c.png",
+                "name": "NINE_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/full_c.png",
+                "name": "FULL_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/four_c.png",
+                "name": "FOUR_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/zero.png",
+                "name": "ZERO",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/two.png",
+                "name": "TWO",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/three.png",
+                "name": "THREE",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/six.png",
+                "name": "SIX",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/seven.png",
+                "name": "SEVEN",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/five_c.png",
+                "name": "FIVE_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/empty_c.png",
+                "name": "EMPTY_C",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/one.png",
+                "name": "ONE",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/nine.png",
+                "name": "NINE",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/full.png",
+                "name": "FULL",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/four.png",
+                "name": "FOUR",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/five.png",
+                "name": "FIVE",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/empty.png",
+                "name": "EMPTY",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/eight.png",
+                "name": "EIGHT",
+                "type": "bitmap"
+            },
+            {
+                "file": "images/background.png",
+                "name": "BACKGROUND",
+                "type": "bitmap"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Vine",
+    "targetPlatforms": [
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "206bd8ee-4a50-45c9-9af3-20d360a4ea99",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
