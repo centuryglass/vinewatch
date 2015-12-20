@@ -39,15 +39,7 @@ $(function () {
   });
 });
 
-$(function () {
-	$("#confirm_delete_all").click(function() {
-		console.log("Deleting all");
-		var options = {};
-		options.delete_all = 1;
-		var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(options));
-		document.location = location;
-	});
-});
+
 
 $(function () {
 	$("#cancel").click(function() {
@@ -121,13 +113,22 @@ function saveOptions() {
 }
 
 $("document").ready(function() {
-	var basalt_colors = getQueryParam("basalt_colors", 0);
-	basalt_colors = basalt_colors.length == 18 ? basalt_colors : "000000AAAAAAFFFFFF";
-	$('#first-color').css('background-color', "#"+basalt_colors.substring(0,6));
-	$('#second-color').css('background-color', "#"+basalt_colors.substring(6,12));
-	$('#third-color').css('background-color', "#"+basalt_colors.substring(12,18));
-	$('#color1').removeClass("hidden");
-	$('#color2').removeClass("hidden");
-	$('#color3').removeClass("hidden");
+	var watch_version = getQueryParam("watch_version", 1);
+	
+	if (watch_version >= 3) {
+		var basalt_colors = getQueryParam("basalt_colors", 0);
+		basalt_colors = basalt_colors.length == 18 ? basalt_colors : "000000AAAAAAFFFFFF";
+		$('#first-color').css('background-color', "#"+basalt_colors.substring(0,6));
+		$('#second-color').css('background-color', "#"+basalt_colors.substring(6,12));
+		$('#third-color').css('background-color', "#"+basalt_colors.substring(12,18));
+		$('#color1').removeClass("hidden");
+		$('#color2').removeClass("hidden");
+		$('#color3').removeClass("hidden");
+	} else {
+		var theme = getQueryParam("theme", 0);
+		theme = parseInt(isNumber(theme) && theme <= 1 ? theme : 0);
+		$('#theme').removeClass("hidden");
+		$('#theme_'+theme).prop( "checked", true ).checkboxradio("refresh");
+	}
 
 });
