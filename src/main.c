@@ -40,7 +40,7 @@ BitmapLayer *num4;
 GBitmap *background;
 GBitmap *empty;
 GBitmap *numbers[10];
-
+/**
 void hollowOutBitmap(GBitmap * bitmap,float percent){
   GRect bounds = gbitmap_get_bounds(bitmap);
   int width = bounds.size.w;
@@ -75,7 +75,7 @@ void hollowOutBitmap(GBitmap * bitmap,float percent){
     APP_LOG(APP_LOG_LEVEL_DEBUG, "Cleared %d bits of %d, or %d percent",changed,bytesPerRow*bounds.size.h,(100*changed)/(bytesPerRow*bounds.size.h));
   }
   //gbitmap_set_data(bitmap, bitData, GBitmapFormat8Bit, bytesPerRow, false);
-}
+}*/
 
 static void update_time() {
   // Get a tm structure
@@ -320,20 +320,6 @@ static void in_received_handler(DictionaryIterator *iter, void *context) {
 
 static void main_window_load(Window *window){
   //load bitmaps
-  #if defined(PBL_BW)
-  background = gbitmap_create_with_resource(RESOURCE_ID_BACKGROUND);
-  empty = gbitmap_create_with_resource(RESOURCE_ID_EMPTY);
-  numbers[0] = gbitmap_create_with_resource(RESOURCE_ID_ZERO);
-  numbers[1] = gbitmap_create_with_resource(RESOURCE_ID_ONE);
-  numbers[2] = gbitmap_create_with_resource(RESOURCE_ID_TWO);
-  numbers[3] = gbitmap_create_with_resource(RESOURCE_ID_THREE);
-  numbers[4] = gbitmap_create_with_resource(RESOURCE_ID_FOUR);
-  numbers[5] = gbitmap_create_with_resource(RESOURCE_ID_FIVE);
-  numbers[6] = gbitmap_create_with_resource(RESOURCE_ID_SIX);
-  numbers[7] = gbitmap_create_with_resource(RESOURCE_ID_SEVEN);
-  numbers[8] = gbitmap_create_with_resource(RESOURCE_ID_EIGHT);
-  numbers[9] = gbitmap_create_with_resource(RESOURCE_ID_NINE);
-  #elif defined(PBL_COLOR)
   background = gbitmap_create_with_resource(RESOURCE_ID_BACKGROUND_C);
   empty = gbitmap_create_with_resource(RESOURCE_ID_EMPTY_C);
   numbers[0] = gbitmap_create_with_resource(RESOURCE_ID_ZERO_C);
@@ -346,7 +332,6 @@ static void main_window_load(Window *window){
   numbers[7] = gbitmap_create_with_resource(RESOURCE_ID_SEVEN_C);
   numbers[8] = gbitmap_create_with_resource(RESOURCE_ID_EIGHT_C);
   numbers[9] = gbitmap_create_with_resource(RESOURCE_ID_NINE_C);
-  #endif
   //load bitmap layers
   background_layer = bitmap_layer_create(GRect(0,0,BG_WIDTH,BG_HEIGHT));
   num1 = bitmap_layer_create(GRect(X1,Y1,NUM_WIDTH,NUM_HEIGHT));

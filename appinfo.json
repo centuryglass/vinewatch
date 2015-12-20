@@ -67,31 +67,6 @@
                 "type": "bitmap"
             },
             {
-                "file": "images/zero.png",
-                "name": "ZERO",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/two.png",
-                "name": "TWO",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/three.png",
-                "name": "THREE",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/six.png",
-                "name": "SIX",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/seven.png",
-                "name": "SEVEN",
-                "type": "bitmap"
-            },
-            {
                 "file": "images/five_c.png",
                 "name": "FIVE_C",
                 "type": "bitmap"
@@ -99,46 +74,6 @@
             {
                 "file": "images/empty_c.png",
                 "name": "EMPTY_C",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/one.png",
-                "name": "ONE",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/nine.png",
-                "name": "NINE",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/full.png",
-                "name": "FULL",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/four.png",
-                "name": "FOUR",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/five.png",
-                "name": "FIVE",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/empty.png",
-                "name": "EMPTY",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/eight.png",
-                "name": "EIGHT",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/background.png",
-                "name": "BACKGROUND",
                 "type": "bitmap"
             }
         ]
