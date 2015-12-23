@@ -113,6 +113,12 @@ function saveOptions() {
 
 $("document").ready(function() {
 	var basalt_colors = getQueryParam("basalt_colors", 0);
+	var watch_version = getQueryParam("watch_version", 1);
+	if (watch_version < 3) {
+		$('#color1').href = "#aplite-picker";
+		$('#color2').href = "#aplite-picker";
+		$('#color3').href = "#aplite-picker";
+	}
 	basalt_colors = basalt_colors.length == 18 ? basalt_colors : "000000AAAAAAFFFFFF";
 	$('#first-color').css('background-color', "#"+basalt_colors.substring(0,6));
 	$('#second-color').css('background-color', "#"+basalt_colors.substring(6,12));
