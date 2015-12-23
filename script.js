@@ -128,9 +128,9 @@ $("document").ready(function() {
 	var basalt_colors = getQueryParam("basalt_colors", 0);
 	var watch_version = getQueryParam("watch_version", 1);
 	if (watch_version < 3) {
-		$('#first-color').prop("href",#aplite-picker);
-		$('#second-color').prop("href",#aplite-picker);
-		$('#third-color').prop("href",#aplite-picker);
+		$('#first-color').prop("href",'#aplite-picker');
+		$('#second-color').prop("href",'#aplite-picker');
+		$('#third-color').prop("href",'#aplite-picker');
 	}
 	basalt_colors = basalt_colors.length == 18 ? basalt_colors : "000000AAAAAAFFFFFF";
 	$('#first-color').css('background-color', "#"+basalt_colors.substring(0,6));
