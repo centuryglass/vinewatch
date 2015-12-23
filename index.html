@@ -44,7 +44,7 @@
 	<body>
 		<div data-role="page" id="page1">
 			<div data-role="header" data-theme="b" id="header" data-position="fixed">
-				<h1>Beta Watchface</h1>
+				<h1>Vine Watchface</h1>
 				<a href="#app_help" data-rel="popup" data-transition="fade" data-position-to="window"  data-icon="info" class="ui-btn-right">Help</a>
 			</div>
 			<div id="settings" data-role="content">
@@ -60,17 +60,17 @@
 				</div>
 
 				<div id="color1" data-role="fieldcontain" class="hidden">
-					<label for="color1">Color 1</label>
+					<label for="color1">Background</label>
 					<a href="#color-picker" data-rel="popup" class="ui-btn ui-corner-all" data-position-to="window" id="first-color" style="height: 5vw; background-color: #FFFFFF"></a>
 				</div>
 				
 				<div id="color2" data-role="fieldcontain" class="hidden">
-					<label for="color2">Color 2</label>
+					<label for="color2">Foreground</label>
 					<a href="#color-picker" data-rel="popup" class="ui-btn ui-corner-all" data-position-to="window" id="second-color" style="height: 5vw; background-color: #00AAFF;"></a>
 				</div>
 				
 				<div id="color3" data-role="fieldcontain" class="hidden">
-					<label for="color3">Color 3</label>
+					<label for="color3">Number highlights</label>
 					<a href="#color-picker" data-rel="popup" class="ui-btn ui-corner-all" data-position-to="window" id="third-color" style="height: 5vw; background-color: #00AAFF;"></a>
 				</div>
 
@@ -87,8 +87,8 @@
 			<!-- POPUPS -->
 			<div data-role="popup" id="app_help" data-overlay-theme="b">
 				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<h3>Beta Config</h3>
-				<p>Typical watchface config stuff.</p>
+				<h3>Vine Config</h3>
+				<p>Only color is configurable right now, let me know if you want any other options</p>
 			</div>
 			
 			<div data-role="popup" id="color-picker" data-overlay-theme="b">
@@ -186,7 +186,16 @@
 					</div>
 				</div>
 			</div>
-			
+			<div data-role="popup" id="aplite-picker" data-overlay-theme="b">
+				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<div data-role="main" id="aplite-picker" class="ui-content" style="border-style: none; height:90vh; overflow-y:scroll; overflow-x:hidden;">
+					<div class="color-row" id="aplite-row1">
+						<div class="color-box" id="color-box-000000" style="background:#000000;"></div>
+						<div class="color-box" id="color-box-AAAAAA" style="background:#AAAAAA;"></div>
+						<div class="color-box" id="color-box-FFFFFF" style="background:#FFFFFF;"></div>
+					</div>
+				</div>
+			</div>
 	
 			<!-- /POPUPS -->
 			
