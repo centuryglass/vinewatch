@@ -124,8 +124,5 @@ $("document").ready(function() {
 	$('#second-color').css('background-color', "#"+basalt_colors.substring(6,12));
 	$('#third-color').css('background-color', "#"+basalt_colors.substring(12,18));
 	
-	$('#color1').removeClass("hidden");
-	$('#color2').removeClass("hidden");
-	$('#color3').removeClass("hidden");
 
 });
