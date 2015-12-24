@@ -1,12 +1,11 @@
 var basalt_color_val = "";
-var debug = true;
+var debug = false;
+var watch_version =-1;
 
 // Listen for when the watchface is opened
 Pebble.addEventListener('ready', 
   function(e) {
     if(debug)console.log('PebbleKit JS ready!');
-    Pebble.sendAppMessage({'request_data':"color"});
-    if(debug)console.log('requesting color data');
   }
 );
 
@@ -20,18 +19,28 @@ Pebble.addEventListener('appmessage',
       basalt_color_val = basalt_color_val.replace('"','');
       if(debug)console.log('AppMessage ' + basalt_color_val +' received!');
     }
+    if('watch_version' in e.payload){
+      watch_version = JSON.stringify(e.payload.watch_version);
+      if(debug)console.log('Watch version is ' + watch_version);
+    }
   });
                         
 Pebble.addEventListener('showConfiguration', function(e) {
   // Show config page
+  if(watch_version == -1){//request data from pebble
+    var request = {};
+    request.request_data = "Send data plz";
+    Pebble.sendAppMessage(request);
+  }
+  else{
   var options = {};
-  options.watch_version = 3;
-  var url = 'http://centuryglass.github.io/vinewatch/index.html'+
-      "?watch_version=3"+
+    options.watch_version = watch_version;
+    var url = 'http://centuryglass.github.io/vinewatch/index.html'+
+      "?watch_version="+watch_version+
       "&basalt_colors="+basalt_color_val;
-  
-  if(debug)console.log('opening '+url);
-  Pebble.openURL(url);
+    if(debug)console.log('opening '+url);
+    Pebble.openURL(url);
+  }
 });
 
 Pebble.addEventListener('webviewclosed', function(e) {
