@@ -1,7 +1,8 @@
 {
     "appKeys": {
         "basalt_colors": 0,
-        "request_data": 1
+        "request_data": 1,
+        "watch_version": 2
     },
     "capabilities": [
         "configurable"
@@ -12,133 +13,157 @@
     "resources": {
         "media": [
             {
-                "file": "images/background_c.png",
-                "name": "BACKGROUND_C",
+                "file": "images/margin.png",
+                "name": "MARGIN",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/zero_c.png",
-                "name": "ZERO_C",
+                "file": "images/grayMask.png",
+                "name": "GRAY_MASK",
+                "targetPlatforms": [
+                    "aplite"
+                ],
                 "type": "bitmap"
             },
             {
-                "file": "images/two_c.png",
-                "name": "TWO_C",
+                "file": "images/3c1.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "3C1",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/three_c.png",
-                "name": "THREE_C",
+                "file": "images/3c2.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "3C2",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/six_c.png",
-                "name": "SIX_C",
+                "file": "images/4c1.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "4C1",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/seven_c.png",
-                "name": "SEVEN_C",
+                "file": "images/4c2.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "4C2",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/eight_c.png",
-                "name": "EIGHT_C",
+                "file": "images/5c1.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "5C1",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/one_s.png",
-                "name": "ONE_C",
+                "file": "images/5c2.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "5C2",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/nine_c.png",
-                "name": "NINE_C",
+                "file": "images/6c1.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "6C1",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/full_c.png",
-                "name": "FULL_C",
+                "file": "images/6c2.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "6C2",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/four_c.png",
-                "name": "FOUR_C",
+                "file": "images/7c1.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "7C1",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/zero.png",
-                "name": "ZERO",
+                "file": "images/7c2.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "7C2",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/two.png",
-                "name": "TWO",
+                "file": "images/8c1.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "8C1",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/three.png",
-                "name": "THREE",
+                "file": "images/8c2.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "8C2",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/six.png",
-                "name": "SIX",
+                "file": "images/9c1.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "9C1",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/seven.png",
-                "name": "SEVEN",
+                "file": "images/9c2.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "9C2",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/five_c.png",
-                "name": "FIVE_C",
+                "file": "images/2c2.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "2C2",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/empty_c.png",
-                "name": "EMPTY_C",
+                "file": "images/2c1.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "2C1",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/one.png",
-                "name": "ONE",
+                "file": "images/0c1.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "0C1",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/nine.png",
-                "name": "NINE",
+                "file": "images/0c2.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "0C2",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/full.png",
-                "name": "FULL",
+                "file": "images/1c1.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "1C1",
+                "targetPlatforms": null,
                 "type": "bitmap"
             },
             {
-                "file": "images/four.png",
-                "name": "FOUR",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/five.png",
-                "name": "FIVE",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/empty.png",
-                "name": "EMPTY",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/eight.png",
-                "name": "EIGHT",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/background.png",
-                "name": "BACKGROUND",
+                "file": "images/1c2.png",
+                "memoryFormat": "SmallestPalette",
+                "name": "1C2",
+                "targetPlatforms": null,
                 "type": "bitmap"
             }
         ]
@@ -146,11 +171,12 @@
     "sdkVersion": "3",
     "shortName": "Vine",
     "targetPlatforms": [
+        "aplite",
         "basalt",
         "chalk"
     ],
     "uuid": "206bd8ee-4a50-45c9-9af3-20d360a4ea99",
-    "versionLabel": "1.0",
+    "versionLabel": "1.1",
     "watchapp": {
         "watchface": true
     }
